@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  form label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  
+  form input[type="date"] {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+  
+  form button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  
+  #apod-container {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  #apod-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #apod-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #apod-container img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .favorite-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .favorite-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .favorite-container p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .favorite-container img {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .favorite-container button {
+    font-size: 16px;
+    padding: 8px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .favorite-container button:hover {
+    background-color: #d32f2f;
+    }
+    
+    /* responsive styles */
+    @media screen and (max-width: 768px) {
+    .apod-container {
+    width: 100%;
+    }
+    
+    .apod-container img {
+    width: 100%;
+    height: auto;
+    }
+    
+    .apod-container button {
+    font-size: 14px;
+    }
+    
+    .favorite-container {
+    width: 100%;
+    }
+    
+    .favorite-container img {
+    width: 100%;
+    height: auto;
+    }
+    
+    .favorite-container button {
+    font-size: 14px;
+    }
+    }
+    
+    @media screen and (max-width: 480px) {
+    .apod-container button {
+    font-size: 12px;
+    }
+    
+    .favorite-container button {
+    font-size: 12px;
+    }
+    }
+  
